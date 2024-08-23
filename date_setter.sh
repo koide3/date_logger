@@ -4,7 +4,7 @@ max_date=1724387234  # 2024-08-23
 
 echo now=$(date)
 
-for ((i=0; i<5; i++)); do
+for ((i=0; i<10; i++)); do
   echo trial $i
 
   log_path=/usr/local/share/date_logger/logs
