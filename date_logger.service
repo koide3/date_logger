@@ -1,0 +1,12 @@
+[Unit]
+Description=date logger
+After=time-set.target
+
+[Service]
+User=root
+ExecStart=/usr/local/share/date_logger/date_logger.sh
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

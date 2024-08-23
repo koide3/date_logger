@@ -1,0 +1,11 @@
+[Unit]
+Description=date setter
+After=time-set.target
+
+[Service]
+User=root
+ExecStart=/usr/local/share/date_logger/date_setter.sh
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
